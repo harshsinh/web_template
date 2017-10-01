@@ -1,5 +1,6 @@
  /* Add a black background color to the top navigation */
-.topnav {
+
+ .topnav {
     background-color: #ffffff;
     overflow: hidden;
 }
@@ -135,26 +136,46 @@ div.my_work_box1 {
     border: 1px solid #ffffff;
     padding: 10px;
     margin: 10px;
-    margin-left: 400px;
+    margin-left: 430px;
 }
 
 div.my_work_box2 {
     background-color: #ffffff;
-    width: 800px;
-    border: 1px solid green;
+    width: 1100px;
+/*     border: 1px solid green; */
     padding: 10px;
     margin: 10px;
-    margin-left: 250px;
+    margin-left: 120px;
 }
 
 .floating_box {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 10px;
-    border: 3px solid #73AD21;
+/*     border: 3px solid #73AD21; */
 }
 
 .floating_box:hover{
-    border: 3px solid #0fb4b2;
+    border: 1px solid #0fb4b2;
 }
+
+/* parallax */
+.parallax {
+    /* The image used */
+    background-image: url("../assets/images/wow.jpeg");
+
+    /* Set a specific height */
+    height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
