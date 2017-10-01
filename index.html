@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-    <head>
-        <title> Page in making </title>
-    </head>
-    <body> 
-        Coming Soon
-    </body>
-=======
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .mySlides {display:none;}
+    </style>
 <head>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
+    <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides w3-animate-right" src="assets/images/deltawing.jpg" style="width:100%">
+        <img class="mySlides w3-animate-right" src="assets/images/nobodyfuckswith.jpg" style="width:100%">
+        <img class="mySlides w3-animate-right" src="assets/images/pickleratrick.png" style="width:100%">
+    </div>
 
-<div class="topnav" id="myTopnav">
-  <a href="#contact">Contact</a>
-  <a href="#blog">Blog</a>
-  <a href="#work">Work</a>
-  <a href="#about">About</a>
-  <a href="#home">Home</a>
-</div>
-
+    <script>
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2500);    
+            }
+    </script>
 </body>
->>>>>>> c810cb7b6ddff24e0f88d812aaf0db528b00d2d5
 </html>
