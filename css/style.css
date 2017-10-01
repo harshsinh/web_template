@@ -92,7 +92,7 @@ html *
     background-image: url("../assets/images/wow.jpeg");
 
     /* Set a specific height */
-    height: 750px;
+    height: 600px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
