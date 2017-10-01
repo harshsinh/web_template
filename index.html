@@ -6,26 +6,31 @@
   <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
-    <div class="w3-content w3-section">
-        <img class="mySlides w3-animate-right" src="assets/images/deltawing.jpg" style="width:100%">
-        <img class="mySlides w3-animate-right" src="assets/images/nobodyfuckswith.jpg" style="width:100%">
-        <img class="mySlides w3-animate-right" src="assets/images/pickleratrick.png" style="width:100%">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/images/nobodyfuckswith.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/images/deltawing.jpg" style="width:100%">
+            <div class="text">Caption Lol</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/images/nobodyfuckswith.jpg" style="width:100%">
+            <div class="text">Caption Lolwa</div>
+        </div>
     </div>
-
-    <script>
-            var myIndex = 0;
-            carousel();
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";  
-                }
-                myIndex++;
-                if (myIndex > x.length) {myIndex = 1}    
-                x[myIndex-1].style.display = "block";  
-                setTimeout(carousel, 2500);    
-            }
-    </script>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script type="text/javascript" src="js/showSlide.js"></script>
 </body>
 </html>
