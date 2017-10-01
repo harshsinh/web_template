@@ -83,6 +83,78 @@ html *
 }
 
 .button_bordered:hover {
-    background-color: #0fb4b2; /* Green */
+    background-color: #0fb4b2;
     color: white;
+}
+
+/*  */
+/* Section **My Work** */
+/*  */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ffffff;
+    color: #e65d78;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ffffff;
+    color: #e65d78;
+}
+
+/* Style the tab content */
+.tabcontent {
+    text-align: center;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ffffff;
+    border-top: none;
+}
+
+div.my_work_box1 {
+    background-color: #ffffff;
+    width: 800px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 400px;
+}
+
+div.my_work_box2 {
+    background-color: #ffffff;
+    width: 800px;
+    border: 1px solid green;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 250px;
+}
+
+.floating_box {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+
+.floating_box:hover{
+    border: 3px solid #0fb4b2;
 }

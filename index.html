@@ -36,5 +36,53 @@ pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
 <button class="button button_filled">Download CV</button>
 <button class="button button_bordered">Hire Me</button>
 </p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>In this example, we use JavaScript to "click" on the London button, to open
+the tab on page load.</p>
+
+<div class='my_work_box1'>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'all')" id="defaultOpen">
+  ALL</button>
+  <button class="tablinks" onclick="openCity(event, 'software_design')">
+  SOFTWARE DESIGN</button>
+  <button class="tablinks" onclick="openCity(event, 'hardware_design')">
+  HARDWARE DESIGN</button>
+</div>
+</div>
+
+<div class='my_work_box2'>
+<div id="all" class="tabcontent">
+    <h3>ALL</h3>
+        <div class="floating_box" style="background-image: url("assets/images/Rick_Sanchez.png");">Floating box</div>
+        <div class="floating_box" style="background-image: url("assets/images/Rick_Sanchez.png");">Floating box</div>
+        <div class="floating_box" style="background-image: url("assets/images/Rick_Sanchez.png");">Floating box</div>
+        <div class="floating_box" style="background-image: url("assets/images/Rick_Sanchez.png");">Floating box</div>
+        <div class="floating_box" style="background-image: url("assets/images/Rick_Sanchez.png");">Floating box</div>
+        <div class="floating_box" style="background-image: url("assets/images/Rick_Sanchez.png");">Floating box</div>
+        <div class="floating_box" style="background-image: url("assets/images/Rick_Sanchez.png");">Floating box</div>
+        <div class="floating_box" style="background-image: url("assets/images/Rick_Sanchez.png");">Floating box</div>
+</div>
+
+<div id="software_design" class="tabcontent">
+    <h3>SOFTWARE DESIGN</h3>
+    <p>Believe me! I coded Paris into existence.</p> 
+</div>
+
+<div id="hardware_design" class="tabcontent">
+  <h3>HARDWARE DESIGN</h3>
+  <p>Believe me! I PCB printed Paris.</p>
+</div>
+</div>
+
+<script src="js/tabs.js"></script>
 </body>
 </html>
