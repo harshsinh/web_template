@@ -27,3 +27,62 @@
 .topnav .icon {
     display: none;
 }
+
+/* Setting global fonts */
+html *
+{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* *About** Section */
+.img_about
+{
+    float: left;
+    margin: 20px 60px 10px 120px;
+}
+
+.para_about
+{
+    width: 70em;
+    word-wrap: break-word;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button_filled {
+    background-color: #0fb4b2;
+    height:50px;
+    width:140px;
+    border-radius: 8px;
+}
+
+.button_filled:hover {
+    background-color: white;
+    color: #0fb4b2;
+    border: 2px solid #0fb4b2;
+}
+
+.button_bordered {
+    background-color: white;
+    color: #0fb4b2;
+    border: 2px solid #0fb4b2;
+    border-radius: 8px;
+    height:50px;
+    width:140px;
+}
+
+.button_bordered:hover {
+    background-color: #0fb4b2; /* Green */
+    color: white;
+}
