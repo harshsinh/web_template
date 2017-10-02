@@ -1,4 +1,5 @@
- /* Add a black background color to the top navigation */
+@import url("font-awesome.min.css");
+/* Add a black background color to the top navigation */
 
  .topnav {
     background-color: #ffffff;
@@ -184,7 +185,6 @@ div.my_work_box2 {
         background-attachment: scroll;
     }
     
-
  /* Stuff for font awesome */
  .fa {
     padding: 20px;
@@ -196,7 +196,7 @@ div.my_work_box2 {
 
 /* Add a hover effect if you want */
 .fa:hover {
-    opacity: 0.7;
+    color: #e65d78;
 }
 
 /* Set a specific color for each brand */
@@ -211,4 +211,10 @@ div.my_work_box2 {
 .fa-twitter {
     background: #55ACEE;
     color: white;
-} 
+}
+
+/* Github */
+.fa-github {
+    background: #000000;
+    color: white;
+}
